@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*  Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo img {
+    padding-right: 20px;
+    height: 100px;
+    width: 160px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00c896;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        margin: 20px 0;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+}
+
+/* 🎯 Hover Effects */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+button,
+.btn {
+    transition: all 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+    background: #009e74;
+    transform: scale(1.05);
+}
+
+/* 🖼️ Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-item {
+    width: 220px;
+    margin: 15px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: white;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+}
+
+.gallery-item p {
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* ✨ Fade In Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .card {
+        width: 90%;
+        display: block;
+        margin: 20px auto;
+    }
+
+    input,
+    select,
+    button {
+        width: 90%;
+    }
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #0a2540;
+    color: white;
+}
+
+.btn {
+    background: #00c896;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero */
+.hero {
+    background: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952') center/cover;
+    color: blue;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero2 {
+    background: url("photos/n2.png") center/cover;
+    color: blue;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+/* Services */
+.services {
+    padding: 40px;
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    width: 250px;
+    margin: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Booking */
+.booking {
+    background: #eee;
+    padding: 40px;
+    text-align: center;
+}
+
+input,
+select,
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 200px;
+}

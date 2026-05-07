@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nettoyage Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <img src="photos/n1.png">
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">Pourquoi Nous</a></li>
+                <li><a href="#gallery">Réalisations</a></li>
+                <li><a href="#booking">Réservation</a></li>
+            </ul>
+
+            <a href="#booking" class="btn">Devis Gratuit</a>
+
+        </nav>
+
+
+
+        <h1>Nettoyage Pro</h1>
+        <a href="#booking" class="btn">Réserver</a>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h2>Un service de nettoyage fiable et professionnel</h2>
+        <p>Nous rendons vos espaces propres, sains et agréables</p>
+        <button onclick="location.href='#booking'">Réserver maintenant</button>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services">
+        <h2>Nos Services</h2>
+
+        <div class="card">
+            <img src="photos/s1.jfif">
+            <h3>Nettoyage Maison</h3>
+            <p>Un nettoyage complet pour votre confort quotidien</p>
+        </div>
+
+        <div class="card">
+            <img src="photos/s2.jfif">
+            <h3>Nettoyage Bureau</h3>
+            <p>Des espaces de travail propres et productifs</p>
+        </div>
+
+        <div class="card">
+            <img src="photos/s3.jfif">
+            <h3>Nettoyage de vitres</h3>
+            <p>Nettoyage de vitres complet et professionel</p>
+        </div>
+
+        <div class="card">
+            <img src="photos/s4.jpg">
+            <h3>Nettoyage industriel</h3>
+            <p>Nettoyage industriel pour les environnements de production</p>
+        </div>
+
+    </section>
+
+    <section class=" services fade-in" id="services">
+        <h2>Nos Réalisations</h2>
+        <p>Découvrez quelques exemples de notre travail professionnel</p>
+
+        <div class="gallery">
+
+            <div class="gallery-item">
+                <img src="photos/p1.jpeg" alt="Avant nettoyage">
+                <p>Avant</p>
+            </div>
+
+            <div class="gallery-item" id="gallery">
+                <img src="photos/pp1.jpeg" alt="Après nettoyage">
+                <p>Après</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="photos/p2.jpeg">
+                <p>Avant</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="photos/pp2.jpeg">
+                <p>Après</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="photos/p3.jpeg">
+                <p>Avant</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="photos/pp3.jpeg">
+                <p>Après</p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- ABOUT -->
+    <section class="services" id="about">
+        <h2>Pourquoi nous choisir ?</h2>
+
+        <div class="card">
+            <h3>✔ Professionnel</h3>
+            <p>Équipe qualifiée et expérimentée</p>
+        </div>
+
+        <div class="card">
+            <h3>⚡ Rapide</h3>
+            <p>Intervention rapide et efficace</p>
+        </div>
+
+        <div class="card">
+            <h3>⭐ Qualité</h3>
+            <p>Satisfaction client garantie à 100%</p>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="services fade-in">
+        <h2>Avis Clients</h2>
+
+        <div class="card">
+            <p>"Service excellent, très professionnel !"</p>
+            <h4>- Marie</h4>
+        </div>
+
+        <div class="card fade-in">
+            <p>"Mon bureau est toujours impeccable."</p>
+            <h4>- Ahmed</h4>
+        </div>
+
+        <div class="card">
+            <p>"Je recommande fortement cette entreprise."</p>
+            <h4>- Sophie</h4>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="hero2 fade-in">
+        <h2>Besoin d’un nettoyage ?</h2>
+        <p>Réservez votre service en moins de 2 minutes</p>
+        <button onclick="location.href='#booking'">Demander un devis</button>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="booking" id="booking">
+        <h2>Réserver un service</h2>
+
+        <form id="form">
+            <input type="text" placeholder="Nom complet" required>
+            <input type="email" placeholder="Email" required>
+
+            <select id="service">
+                <option value="50">Nettoyage Maison - 50€</option>
+                <option value="80">Nettoyage Bureau - 80€</option>
+            </select>
+
+            <button type="submit">Envoyer la demande</button>
+        </form>
+    </section>
+
+</body>
+<script src="script.js"></script>
+
+</html>
